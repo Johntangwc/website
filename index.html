@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mojji</title>
+	<script src = "index.js"></script> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+</head>
+<body>
+
+	<div class = "outerContainer">
+		<div class = "left">
+			<img src = "logo.png" id = "logo">
+			<br>
+			<br>
+			<div class = "comingSoon">
+				<img src = "google.png" id = "google">
+				<img src = "apple.png" id = "apple">
+			</div>
+		</div>
+
+		<div class = "right">
+			<form action = "index.php" method="POST" class = "form">
+				<label>Enter Email Address for Notification: </label>
+				<br>
+				<br>
+				<input type="email" name="email" id = "text" placeholder="welcome@mojji.com" required>
+				<br>
+				<br>
+				<input type="submit" name="submitBtn" id = "submit" onclick = "alertBox()">
+			</form>
+		</div>
+		
+
+	</div>
+
+
+
+	<style type="text/css">
+		
+		body{
+			background-color: yellow;
+		}
+
+		.outerContainer{
+			margin-top: 5%;
+		}
+
+		.left{
+			margin-right: 50%;
+		}
+
+		.left #logo{
+			width: 300px;
+			height: 300px;
+			padding-left: 25%;
+		}
+
+		.comingSoon{
+			padding-left: 25%;
+		}
+
+		.comingSoon #google{
+			width: 140px;
+			height: 40px;
+		}
+		.comingSoon #apple{
+			width: 140px;
+			height: 35px;
+		}
+
+		.right{
+			margin-left: 50%;
+			position: absolute;
+			top: 250px;
+		}
+
+		.right label{
+			text-align: center;
+			font-size: 20px;
+			position: relative;
+			left: 110px;
+		}
+
+		.right #text{
+			width:500px;
+			height: 50px;
+			font-size: 44px;
+			font-family: monospace;
+		}
+
+		.right #submit{
+			width:100px;
+			height: 50px;
+			position: relative;
+			left: 400px;
+			background-color: red;
+			border: 2px solid red;
+			border-radius: 12px;
+			color: white;
+			font-size: 20px;
+			font-family: rocksalt;
+		}
+
+		.right #submit:hover{
+			background-color: #BE1600;
+			border: none;
+		}
+
+		@media only screen and (max-width: 600px){
+
+			.outerContainer{
+				margin-top: 50%;
+			}
+
+			.left #logo{
+			 	width: 400px;
+			 	height: 400px;
+			 	margin-left: 50%;
+			 }
+
+			 .right #submit{
+			 	visibility: hidden;
+			 }
+
+			 .comingSoon {
+			 	margin-left: 50%;
+			 }
+
+			 .comingSoon #apple{
+			 	width: 388px;
+			 	height: 90px;
+			 	position: absolute;
+			 	left: 150px;
+			 }
+
+			 .comingSoon #google{
+			 	width: 410px;
+			 	height: 100px;
+			 }
+
+			 .right {
+			 	margin-top: 100%;
+			 }
+
+			 .right label{
+			 	visibility: hidden;
+			 }
+
+			 .right #text{
+			 	visibility: hidden;
+			 }
+
+
+			
+		}
+		
+
+
+	</style>
+
+</body>
+</html>
